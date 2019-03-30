@@ -61,6 +61,10 @@ nav a:focus {
   outline: 0;
 }
 
+body {
+  background: rgb(218, 106, 106);
+}
+
 h2 {
   font-size: 24px;
   text-decoration: underline;
@@ -111,7 +115,7 @@ section {
 
 blockquote {
   quotes: "\201C""\201D""\2018""\2019";
-  border-left: 10px solid #CCCCCC;
+  border-left: 10px solid #990000;
   padding: 10px;
   font-size: 24px;
 }
@@ -120,7 +124,14 @@ blockquote::before {
   font-family: 'Times New Roman';
   content: open-quote;
   font-size: 36px;
-  color: #CCCCCC;
+  color: #990000;
+}
+
+blockquote::after {
+  font-family: 'Times New Roman';
+  content: close-quote;
+  font-size: 36px;
+  color: #990000;
 }
 
 .contact-info ul {
