@@ -92,14 +92,14 @@ main p {
 
 main img {
   display: inline-block;
-  margin-left: 30px;
-  margin-bottom: 20px;
+  margin: 30px;
   max-width: 50%;
   border-radius: 10px;
   border: #771111 3px solid;
 }
 
 section {
+  text-align: justify;
   width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -121,6 +121,20 @@ section li {
 
 .pricing-info {
   border: none;
+}
+
+.reviews img {
+  max-width: 35%;
+}
+
+.quote {
+  max-width: 50%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.right {
+  margin-left: 130px;
 }
 
 blockquote {
