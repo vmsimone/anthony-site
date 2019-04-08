@@ -9,6 +9,10 @@ nav {
   padding: 10px;
 }
 
+nav a {
+  font-family: 'Roboto', sans-serif;
+}
+
 nav h1 {
   color: #FFBDBD;
   text-align: center;
@@ -64,6 +68,7 @@ nav a:focus {
 
 main {
   text-align: center;
+  font-family: 'Roboto Slab', serif;
 }
 
 main p {
@@ -126,7 +131,7 @@ blockquote {
   quotes: "\201C""\201D""\2018""\2019";
   border-left: 10px solid #990000;
   padding: 10px;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 blockquote::before {
@@ -176,7 +181,6 @@ blockquote::after {
     display: block;
     position: relative;
     text-align: left;
-    font-family: 'Roboto Slab', serif;
   }
   
   main p {
@@ -214,5 +218,9 @@ blockquote::after {
   .right {
     margin-left: 10px;
     max-width: 35%;
+  }
+
+  blockquote {
+    font-size: 24px;
   }
 }
