@@ -92,9 +92,11 @@ main p {
 
 main img {
   display: inline-block;
+  vertical-align: top;
   margin: 30px;
+  margin-top: 10px;
   max-width: 50%;
-  border-radius: 10px;
+  border-radius: 20px;
   border: #771111 3px solid;
 }
 
@@ -127,14 +129,27 @@ section li {
   max-width: 35%;
 }
 
-.quote {
+.reviews img.boxing {
   max-width: 50%;
+}
+
+.reviews img.bottom {
+  max-width: 45%;
+}
+
+.quote {
+  max-width: 45%;
   vertical-align: top;
   display: inline-block;
+  text-align: left;
+  margin-bottom: 75px;
+  background: rgb(255, 156, 156);
+  border-radius: 10px;
 }
 
 .right {
-  margin-left: 130px;
+  margin-left: 10px;
+  max-width: 35%;
 }
 
 blockquote {
