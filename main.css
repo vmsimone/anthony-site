@@ -49,20 +49,24 @@ nav a:focus {
 }
 
 main {
-  text-align: center;
-  font-family: 'Roboto Slab', serif;
+  margin: 0 auto;
+  max-width: 90%;
+  display: block;
+  position: relative;
   margin-top: 120px;
+  font-family: 'Roboto Slab', serif;
 }
 
 main p {
   font-family: 'Roboto', sans-serif;
-  max-width: 90%;
+  max-width: 100%;
+  text-align: justify;
 }
 
 main img {
   border-radius: 20px;
   border: #771111 3px solid;
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -85,7 +89,7 @@ h2 {
 }
 
 section {
-  text-align: justify;
+  text-align: center;
   width: 100%;
   border-bottom: 2px dashed #771111;
   margin-top: 50px;
@@ -107,13 +111,22 @@ section li {
   border: none;
 }
 
+.pricing-info p {
+  text-align: center;
+}
+
+.reviews img {
+  margin-bottom: 50px;
+}
+
 .quote {
   vertical-align: top;
   display: inline-block;
   text-align: left;
-  margin-bottom: 75px;
   background: rgb(255, 156, 156);
   border-radius: 10px;
+  max-width: 100%;
+  margin-bottom: 5px;
 }
 
 blockquote {
@@ -147,7 +160,7 @@ blockquote::after {
   color: #771111;
 }
 
-@media only screen and (min-width: 660px) {
+@media only screen and (min-width: 800px) {
   nav p {
     right: 10px;
     top: -2px;
@@ -164,11 +177,7 @@ blockquote::after {
   }
 
   main {
-    margin: 0 auto;
     max-width: 80%;
-    display: block;
-    position: relative;
-    margin-top: 120px;
   }
   
   main p {
@@ -192,6 +201,14 @@ blockquote::after {
     overflow: auto;
   }
 
+  section {
+    text-align: justify;
+  }
+
+  .reviews {
+    clear: both;
+  }
+
   .reviews img {
     max-width: 40%;
     max-height: 325px;
@@ -199,8 +216,14 @@ blockquote::after {
     margin: 0;
   }
 
+  img.float-left {
+    float: left;
+    margin-right: 14%;
+  }
+
   .quote {
     max-width: 45%;
+    margin-bottom: 125px;
   }
 
   blockquote {
