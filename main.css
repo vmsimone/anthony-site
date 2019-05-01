@@ -9,10 +9,6 @@ nav {
   padding: 10px;
 }
 
-nav a {
-  font-family: 'Roboto', sans-serif;
-}
-
 nav h1 {
   color: #FFBDBD;
   text-align: center;
@@ -21,23 +17,11 @@ nav h1 {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: 'Roboto', sans-serif;
-  font-size: 26px;
-}
-
-nav p {
-  color: #FFBDBD;
-  text-align: center;
-  max-width: 90%;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 28px;
 }
 
 nav ul {
   padding: 0;
-  margin: 0 auto;
   margin-bottom: 5px;
   margin-top: 5px;
   text-align: center;
@@ -47,15 +31,13 @@ nav li {
   display: inline;
   padding-left: 5px;
   padding-right: 5px;
-  margin: 0 auto;
 }
 
 nav a {
-  border: none;
-  font-size: 12px;
+  font-size: 14px;
   background: none;
   color: black;
-  text-decoration: underline;
+  text-decoration: underline bold;
   outline: none;
 }
 
@@ -69,6 +51,7 @@ nav a:focus {
 main {
   text-align: center;
   font-family: 'Roboto Slab', serif;
+  margin-top: 120px;
 }
 
 main p {
@@ -81,6 +64,14 @@ main img {
   border: #771111 3px solid;
   max-width: 90%;
   margin: 0 auto;
+}
+
+/*For offsetting anchor targets*/
+section:before {
+  content:"";
+  display:block;
+  height:120px; /* fixed header height*/
+  margin-top:-120px; /* negative fixed header height */
 }
 
 body {
@@ -96,11 +87,9 @@ h2 {
 section {
   text-align: justify;
   width: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
   border-bottom: 2px dashed #771111;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  margin-top: 50px;
+  padding-bottom: 50px;
 }
 
 section ul {
@@ -176,48 +165,42 @@ blockquote::after {
 
   main {
     margin: 0 auto;
-    margin-bottom: 25px;
     max-width: 80%;
     display: block;
     position: relative;
-    text-align: left;
+    margin-top: 120px;
   }
   
   main p {
     display: inline-block;
     vertical-align: top;
-    max-width: 40%;
+    max-width: 30%;
     font-size: 18px;
     margin-right: 5%;
+    text-align: left;
   }
   
   main img {
-    display: inline-block;
+    float: right;
     vertical-align: top;
     margin: 30px;
     margin-top: 10px;
-    max-width: 45%;
+    max-width: 50%;
+  }
+
+  .overflow-wrap {
+    overflow: auto;
   }
 
   .reviews img {
-    max-width: 35%;
-  }
-  
-  .reviews img.boxing {
-    max-width: 50%;
-  }
-  
-  .reviews img.bottom {
-    max-width: 45%;
+    max-width: 40%;
+    max-height: 325px;
+    float: right;
+    margin: 0;
   }
 
   .quote {
     max-width: 45%;
-  }
-
-  .right {
-    margin-left: 10px;
-    max-width: 35%;
   }
 
   blockquote {
